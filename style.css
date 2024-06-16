@@ -1,16 +1,16 @@
 @font-face {
   font-family: NB;
-  src: url(./NB-International-Pro-Regular.ttf);
+  src: url(./fonts/NB-International-Pro-Regular.ttf);
 }
 
 @font-face {
   font-family: NB-light;
-  src: url(./NB-International-Pro-Light.ttf);
+  src: url(./fonts/NB-International-Pro-Light.ttf);
 }
 
 @font-face {
   font-family: rejoy;
-  src: url(./rejouice.ttf);
+  src: url(./fonts/rejouice.ttf);
 }
 
 * {
