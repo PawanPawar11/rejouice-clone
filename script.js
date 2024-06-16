@@ -26,7 +26,7 @@ function cursorEffect() {
 }
 
 function page2Animation() {
-    gsap.from("#para #para-line", {
+    gsap.from("#page2", {
     y:120,
     stagger:0.2,
     duration:1,
@@ -47,6 +47,42 @@ function loco() {
     })();
 }
 
+function page4Animation() {
+    gsap.from("#page4", {
+    y:120,
+    stagger:0.2,
+    duration:1,
+    opacity:0,
+    scrollTrigger: {
+        trigger:"#page4",
+        scroller:"body",
+        start:"top 60%",
+        end:"top 50%",
+        scrub:2
+    }
+})
+}
+
+function page6Animation() {
+    gsap.from("#page6", {
+    y:120,
+    stagger:0.2,
+    duration:1,
+    opacity:0,
+    scrollTrigger: {
+        trigger:"#page6",
+        scroller:"body",
+        start:"top 60%",
+        end:"top 50%",
+        scrub:2
+    }
+})
+}
+
 cursorEffect()
 page2Animation()
 loco()
+page4Animation()
+page6Animation()
+
+

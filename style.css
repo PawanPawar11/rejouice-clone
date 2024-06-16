@@ -37,7 +37,7 @@ body {
   width: 7.5vw;
   background-color: rgba(32, 32, 32, 0.575);
   border-radius: 50%;
-  position: fixed;
+  position: absolute;
   z-index: 9;
   display: flex;
   align-items: center;
@@ -99,17 +99,18 @@ nav h4 {
   background-color: #faf8f3;
 }
 
-#header {
+#page2 #header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid black;
 }
 
-#header h3 {
+#page2 #header h3 {
   font-family: NB-light;
   font-size: 1.6rem;
   margin-bottom: 1rem;
+  font-weight: 200;
 }
 
 #para-line {
@@ -118,4 +119,268 @@ nav h4 {
   line-height: 4rem;
   letter-spacing: -1.5px;
   margin-top: 1.2rem;
+}
+
+#page3 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 3vw;
+  background-color: #faf8f3;
+}
+
+#page3-top {
+  /* background-color: red; */
+  text-align: center;
+}
+
+#page3-top h4 {
+  margin-bottom: 1vw;
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+#page3-top h4 span {
+  font-size: 0.7vw;
+  background-color: #000;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 15px;
+}
+
+#page3-top h2 {
+  font-size: 4vw;
+  font-weight: 500;
+}
+
+#page3-top h4 i {
+  font-size: 1rem;
+  margin-left: 0.6rem;
+  font-weight: lighter;
+}
+
+#page3-elements {
+  height: 85vh;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 18vw;
+}
+
+#page3-elements .box {
+  height: 100%;
+  width: 32.8%;
+  /* background-color: blue; */
+  position: relative;
+}
+
+#page3-elements .box video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#page3-elements .box img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all linear 0.5s;
+}
+
+#page3-elements .box:hover img {
+  opacity: 0;
+}
+
+#page4 {
+  height: 100vh;
+  width: 100%;
+  padding: 5rem 3rem 6rem;
+  background-color: #faf8f3;
+}
+
+#page4 #header {
+  border-bottom: 1px solid black;
+}
+
+#page4 #header h3 {
+  font-family: NB-light;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 200;
+}
+
+#page5 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #090909;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page5-content {
+  background-color: red;
+}
+
+#page5 video {
+  height: 100%;
+}
+
+#page5 svg {
+  position: absolute;
+  height: 70%;
+}
+
+#page6 {
+  height: 100vh;
+  width: 100%;
+  padding: 8rem 3rem 6rem;
+  background-color: #faf8f3;
+}
+
+#page6 #header {
+  border-bottom: 1px solid black;
+}
+
+#page6 #header h3 {
+  font-family: NB-light;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 200;
+}
+
+#page7 {
+  min-height: 100vh;
+  width: 100%;
+  padding: 4vw 0;
+  background-color: #fffcf1;
+  overflow-x: hidden;
+}
+
+#page7 h1 {
+  font-size: 8vw;
+  font-family: rejoy;
+  font-weight: 100;
+  border-bottom: 1px solid #000;
+  width: 92%;
+  margin-left: 4%;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#swiperdiv-slide {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  object-fit: cover;
+  object-position: center;
+  gap: 1rem;
+  animation: 35s slide infinite linear;
+}
+
+#swiperdiv-slide img {
+  display: inline-block;
+  height: 30%;
+  width: 30%;
+}
+
+#page8 {
+  height: 30vh;
+  width: 100%;
+  padding: 3vw;
+  background-color: #fffcf1;
+}
+
+#page8-top {
+  /* background-color: red; */
+  text-align: center;
+}
+
+#page8-top h4 {
+  margin-bottom: 1vw;
+  font-size: 1.2vw;
+  font-weight: 100;
+  font-family: NB-light;
+}
+
+#page8-top h2 {
+  font-size: 4vw;
+  font-weight: 500;
+}
+
+#page8-top h4 i {
+  font-size: 1rem;
+  margin-left: 0.6rem;
+  font-weight: lighter;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #0e0e0e;
+  color: #fffcf1;
+  height: 90vh;
+  width: 100%;
+  padding: 2rem;
+}
+
+#part1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+#location h3 {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+#left button {
+  padding: 15px 20px;
+  border: 1px solid #fffcf1;
+  border-radius: 5rem;
+  font-size: 1rem;
+  font-weight: 100;
+  background-color: #0e0e0e;
+  color: #fffcf1;
+  margin-top: 2rem;
+}
+
+#part2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#legal-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+#footer-text {
+  font-size: 12rem;
+  text-align: center;
 }
